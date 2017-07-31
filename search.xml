@@ -3,6 +3,108 @@
   
     
     <entry>
+      <title><![CDATA[Markdown test]]></title>
+      <url>/2017/07/31/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(2)/</url>
+      <content type="html"><![CDATA[<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><p><code>========</code><br><code>--------</code></p>
+<h2 id="标头"><a href="#标头" class="headerlink" title="标头"></a>标头</h2><p><code># 1</code></p>
+<h1 id="1"><a href="#1" class="headerlink" title="1"></a>1</h1><p><code>## 2</code></p>
+<h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><p><code>### 3</code></p>
+<h3 id="3"><a href="#3" class="headerlink" title="3"></a>3</h3><p><code>#### 4</code></p>
+<h4 id="4"><a href="#4" class="headerlink" title="4"></a>4</h4><p><code>##### 5</code></p>
+<h5 id="5"><a href="#5" class="headerlink" title="5"></a>5</h5><p><code>###### 6</code></p>
+<h6 id="6"><a href="#6" class="headerlink" title="6"></a>6</h6><h2 id="序列"><a href="#序列" class="headerlink" title="序列"></a>序列</h2><h4 id="无序"><a href="#无序" class="headerlink" title="无序"></a>无序</h4><p><code>- 列表文本前使用 [减号+空格]</code><br><code>+ 列表文本前使用 [加号+空格]</code><br><code>* 列表文本前使用 [星号+空格]</code></p>
+<ul>
+<li>列表文本前使用 [减号+空格]</li>
+</ul>
+<ul>
+<li>列表文本前使用 [加号+空格]</li>
+</ul>
+<ul>
+<li>列表文本前使用 [星号+空格]</li>
+</ul>
+<ol>
+<li>列出所有元素：<ul>
+<li>无序列表元素 A<ol>
+<li>元素 A 的有序子列表</li>
+</ol>
+</li>
+<li>前面加四个空格</li>
+</ul>
+</li>
+<li>列表里的多段换行：<br> 前面必须加四个空格，<br> 这样换行，整体的格式不会乱</li>
+<li><p>列表里引用：</p>
+<blockquote>
+<p>前面空一行<br>仍然需要在 &gt;  前面加四个空格</p>
+</blockquote>
+</li>
+<li><p>列表里代码段：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">前面四个空格，之后按代码语法 ``` 书写</div></pre></td></tr></table></figure>
+<pre><code>或者直接空八个，引入代码块
+</code></pre></li>
+<li><p>列表前使用 [数字+空格]</p>
+</li>
+<li>我们会自动帮你添加数字</li>
+<li>不用担心数字不对，显示的时候我们会自动把这行的 7 纠正为 3</li>
+</ol>
+<h4 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h4><p><code>&gt; 最外层引用</code><br><code>&gt; &gt; 多一个 &gt; 嵌套一层引用</code><br><code>&gt; &gt; &gt; 可以嵌套很多层</code></p>
+<blockquote>
+<p>最外层引用</p>
+<blockquote>
+<p>多一个 &gt; 嵌套一层引用</p>
+<blockquote>
+<p>可以嵌套很多层</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>直接在输入之前加四个空格：<br><code>output</code><br>    output</p>
+<p>引用里面可以用上面的格式在引用里面用标题等</p>
+<h4 id="水平线"><a href="#水平线" class="headerlink" title="水平线"></a>水平线</h4><p><code>***</code></p>
+<hr>
+<h2 id=""><a href="#" class="headerlink" title="---"></a><code>---</code></h2><h4 id="插入链接"><a href="#插入链接" class="headerlink" title="插入链接"></a>插入链接</h4><p>方法1：<br><code>[baidu](http://baidu.com)</code><br><a href="http://baidu.com" target="_blank" rel="external">baidu</a><br>方法2：<br><code>I get 10 times more traffic from [Google] [1] than from [Yahoo] [2] or [MSN] [3].</code><br> <code>[1]: http://google.com/        &quot;Google&quot;</code><br> <code>[2]: http://search.yahoo.com/  &quot;Yahoo Search&quot;</code><br> <code>[3]: http://search.msn.com/    &quot;MSN Search&quot;</code></p>
+<p>I get 10 times more traffic from <a href="http://google.com/" title="Google" target="_blank" rel="external">Google</a> than from <a href="http://search.yahoo.com/" title="Yahoo Search" target="_blank" rel="external">Yahoo</a> or <a href="http://search.msn.com/" title="MSN Search" target="_blank" rel="external">MSN</a>.</p>
+<p><code>I get 10 times more traffic from [Google][] than from [Yahoo][] or [MSN][].</code></p>
+<p>  <code>[google]: http://google.com/        &quot;Google&quot;</code><br>  <code>[yahoo]:  http://search.yahoo.com/  &quot;Yahoo Search&quot;</code><br>  <code>[msn]:    http://search.msn.com/    &quot;MSN Search&quot;</code></p>
+<p>I get 10 times more traffic from <a href="http://google.com/" title="Google" target="_blank" rel="external">Google</a> than from<br><a href="http://search.yahoo.com/" title="Yahoo Search" target="_blank" rel="external">Yahoo</a> or <a href="http://search.msn.com/" title="MSN Search" target="_blank" rel="external">MSN</a>.</p>
+<h4 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h4><p>markdown的格式<br><code>![mou icon](http://mouapp.com/Mou_128.png)</code><br><img src="http://mouapp.com/Mou_128.png" alt="mou icon"><br>HTML的格式<br><code>&lt;img src=&quot;http://mouapp.com/Mou_128.png&quot; width=&quot;100&quot; height=&quot;25&quot;&gt;</code><br><img src="http://mouapp.com/Mou_128.png" width="100" height="25"></p>
+<h4 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h4><p><em>嘿嘿</em><br><strong>嘿嘿</strong><br><em>fdewfdewf</em><br><strong>dceewc</strong><br><em>嘿嘿</em><br><strong>嘿嘿</strong><br><em>cewecw</em><br><strong>cwwcewc</strong><br><em>single asterisks</em><br><em>single underscores</em><br><strong>double asterisks</strong><br><strong>double underscores</strong><br>un<em>frigging</em>believable<br>*this text is surrounded by literal asterisks*</p>
+<h4 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h4><table>
+<thead>
+<tr>
+<th>Tables</th>
+<th style="text-align:center">Are</th>
+<th style="text-align:right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td style="text-align:center">right-aligned</td>
+<td style="text-align:right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td style="text-align:center">centered</td>
+<td style="text-align:right">$12</td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td style="text-align:center">are neat</td>
+<td style="text-align:right">$1</td>
+</tr>
+</tbody>
+</table>
+<h4 id="代码框"><a href="#代码框" class="headerlink" title="代码框"></a>代码框</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">`efwfewfwfewfewfwfe`</div><div class="line"></div><div class="line">``crecrrre``</div><div class="line"></div><div class="line">`</div><div class="line">dewd</div><div class="line">`</div><div class="line"></div><div class="line">``</div><div class="line">ssdw</div><div class="line">``</div></pre></td></tr></table></figure>
+<p><code>efwfewfwfewfewfwfe</code></p>
+<p><code>crecrrre</code></p>
+<p><code>dewd</code></p>
+<p><code>ssdw</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">defewf</div></pre></td></tr></table></figure>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[大哥！你有那种]]></title>
       <url>/2017/07/28/hello-world%20-%20%E5%89%AF%E6%9C%AC/</url>
       <content type="html"><![CDATA[<p>哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒哒 冒蓝光的吗</p>
